@@ -23,6 +23,7 @@ export const GuildAvatar = ({ index }: { index: number }) => {
             );
         case "telegram":
         case "messenger":
+        case "threema":
         case "whatsapp":
             return <PlatformAvatar />;
     }

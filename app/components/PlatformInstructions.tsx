@@ -141,6 +141,35 @@ const TelegramInstructions = () => (
     </>
 );
 
+const ThreemaInstructions = () => (
+  <>
+      <ol>
+          <li>
+              Open Threema on your Phone
+          </li>
+          <li>
+              Open dot-menu
+          </li>
+          <li>
+              Chose Backups
+          </li>
+          <li>
+              Switch to Data Backup tab
+          </li>
+          <li>
+              Bottom-right press "Create data backup"
+          </li>
+          <li>
+              Enter a password, ensure to note it down.
+              Do <b>not</b> select "Include large media files"
+          </li>
+          <li>
+              Press "OK", Threema will close and let you know in the notifications when it's done exporting.
+          </li>
+      </ol>
+  </>
+);
+
 const WhatsAppInstructions = () => {
     const [device, setDevice] = useState<"ios" | "android">("ios");
 
@@ -205,5 +234,6 @@ export const PlatformInstructions: {
     discord: <DiscordInstructions />,
     messenger: <MessengerInstructions />,
     telegram: <TelegramInstructions />,
+    threema: <ThreemaInstructions />,
     whatsapp: <WhatsAppInstructions />,
 };

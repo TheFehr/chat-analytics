@@ -312,6 +312,7 @@ export class DatabaseBuilder {
         // I really don't want to do this here, but I don't
         // like the alternatives right now
         const formatParticipantName = (i: Index) => {
+            console.debug(i, this.authors.getByIndex(i), this.authors)
             const name = this.authors.getByIndex(i)!.name;
             if (name.split("#").pop()?.length === 4)
                 // skip Discord discriminator
@@ -319,6 +320,7 @@ export class DatabaseBuilder {
             return name;
         };
 
+        console.debug(participants);
         return {
             name:
                 channel.type !== "dm"

@@ -44,6 +44,7 @@
   "dependencies": {
     "fast-glob": "^3.2.12",
     "fflate": "^0.7.4",
+    "papaparse": "^5.5.3",
     "pretty-bytes": "<6.0.0",
     "whatsapp-chat-parser": "^4.0.1",
     "yargs": "^17.7.0"
@@ -55,6 +56,7 @@
     "@types/glob": "^8.0.1",
     "@types/jest": "^29.4.0",
     "@types/node": "^18.14.0",
+    "@types/papaparse": "^5.3.16",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@types/react-window": "^1.8.5",

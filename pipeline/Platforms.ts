@@ -1,5 +1,5 @@
 /** Available platforms */
-export type Platform = "discord" | "messenger" | "telegram" | "whatsapp";
+export type Platform = "discord" | "messenger" | "telegram" | "threema" | "whatsapp";
 
 interface PlatformInformation {
     name: string;
@@ -52,6 +52,18 @@ export const PlatformsInfo: {
             edits: true,
             calls: true,
         },
+    },
+    threema: {
+        name: "Threema",
+        color: [0, 0, 75.3],
+        defaultFilename: "message_<number>.csv",
+        support: {
+            stickers: false,
+            reactions: true,
+            replies: true,
+            edits: true,
+            calls: true
+        }
     },
     whatsapp: {
         name: "WhatsApp",
